@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +8,22 @@
     <link rel="stylesheet" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
     <header class="header">
         <a href="#home" class="logo">Hritik <span>Chaudhary</span></a>
 
         <i class='bx bx-menu' id="menu-icon"></i>
-        
+
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about" class="active">About</a>
             <a href="#services">Services</a>
             <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="assets/Hritik_Chaudhary_Resume.pdf" download="Hritik_Chaudhary_Resume.pdf" target="_blank"
+                class="res-btn">Resume</a>
         </nav>
 
-        <!-- <button class="gradient-btn">Contact Me</button> -->
         <a href="#contact" class="gradient-btn">Contact Me</a>
     </header>
 
@@ -29,8 +31,10 @@
         <div class="home-content">
             <h1>Hi, It's <span>Hritik</span></h1>
             <h3>I'm a <span>Developer</span></h3>
-            <p>Aspiring Software Engineer with a strong foundation in Java, Python, and web development. Currently pursuing B.E. in Computer Science at RV Institute of Technology and Management, Bengaluru. Eager to apply academic knowledge to real-world projects and contribute to a dynamic tech team.</p>
-            
+            <p>Aspiring Software Engineer with a strong foundation in Java, Python, and web development. Currently
+                pursuing B.E. in Computer Science at RV Institute of Technology and Management, Bengaluru. Eager to
+                apply academic knowledge to real-world projects and contribute to a dynamic tech team.</p>
+
             <div class="social-icons">
                 <a href="https://github.com/hritikx02">
                     <i class="bx bxl-github"></i>
@@ -56,7 +60,6 @@
         </div>
 
         <div class="home-img">
-            <!-- <img src="image.jpeg" alt="MY-IMAGE"> -->
             <img src="images/wpfp2.jpg" alt="MY-IMAGE">
         </div>
     </section>
@@ -68,8 +71,80 @@
 
         <div class="about-content">
             <h2>About <span>Me</span></h2>
-            <p>Aspiring Software Engineer with a strong foundation in Java, Python, and web development. Currently pursuing B.E. in Computer Science at RV Institute of Technology and Management, Bengaluru. Eager to apply academic knowledge to real-world projects and contribute to a dynamic tech team.</p>
-            <a href="#" class="btn">Read More</a>
+            <p><br><br>Hello! I'm Hritik Chaudhary, a passionate and driven third-year Computer Science student at RV Institute
+                of Technology and Management, Bengaluru. With a strong foundation in Java, Python, HTML, CSS,
+                JavaScript, Django, Node.js, and more, I strive to create innovative, efficient, and user-friendly
+                applications. <br><br></p>
+            <div class="btn" id="read-more" onclick="onClickRead(this)">Read More</div>
+
+            <div id="active-rm">
+                <div class="p-rm">
+                    <p>I have hands-on experience working on various projects such as OTC Drug Management System and
+                        Pong Frenzy, and have had the privilege of working with EJS, Express, MySQL, and Node.js in web
+                        development projects like Autheclipse. My goal is to not only master my technical skills but
+                        also leverage them to solve real-world problems and make a positive impact. <br><br>
+
+                        In addition to my academic endeavors, I’ve gained practical experience through an internship at
+                        the Niraj Singh Foundation, where I contributed to web design and development for an NGO focused
+                        on education, sanitation, medical infrastructure, and women empowerment. I am also actively
+                        seeking opportunities to grow as a Front-End Developer and Software Engineer. <br><br>
+
+                        While I am an introvert by nature, I enjoy small conversations and connecting with others who
+                        share similar interests. Despite having a tendency to overthink at times, I strive to better
+                        myself each day, balancing my technical skills with personal growth. I believe in constant
+                        learning, adaptability, and embracing new challenges to stay ahead in the ever-evolving tech
+                        world. <br><br>
+
+                        Beyond coding, I’m also passionate about self-improvement and making progress in various aspects
+                        of my life, including physical health, mental well-being, and honing non-technical skills. When
+                        I’m not working on coding projects, I enjoy exploring new trends in the tech world, playing
+                        games, and learning new tools and technologies. <br><br></p>
+                </div>
+
+                <div class="timeline-section">
+                    <div class="timeline-items">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2018</div>
+                            <div class="timeline-content">
+                                <h3>Class X</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deserunt aliquam quam
+                                    voluptatibus, vel dicta.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2020</div>
+                            <div class="timeline-content">
+                                <h3>Class XII</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deserunt aliquam quam
+                                    voluptatibus, vel dicta.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2021 - Ongoing</div>
+                            <div class="timeline-content">
+                                <h3>B.E in CSE</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deserunt aliquam quam
+                                    voluptatibus, vel dicta.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2024</div>
+                            <div class="timeline-content">
+                                <h3>Intern @ Juniper Networks</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deserunt aliquam quam
+                                    voluptatibus, vel dicta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -81,7 +156,12 @@
                 <div class="service-info">
                     <i class="bx bxl-figma"></i>
                     <h4>UI / UX Design</h4>
-                    <p>As a UI/UX designer, I focus on creating intuitive, visually appealing, and user-centric interfaces that enhance user experiences. My process involves extensive user research, wireframing, prototyping, and usability testing to ensure designs meet both user needs and business objectives. I prioritize accessibility, seamless navigation, and aesthetic consistency, crafting interfaces that are not only functional but also engaging. My expertise lies in balancing creativity and practicality to design solutions that leave a lasting impact.</p>
+                    <p>As a UI/UX designer, I focus on creating intuitive, visually appealing, and user-centric
+                        interfaces that enhance user experiences. My process involves extensive user research,
+                        wireframing, prototyping, and usability testing to ensure designs meet both user needs and
+                        business objectives. I prioritize accessibility, seamless navigation, and aesthetic consistency,
+                        crafting interfaces that are not only functional but also engaging. My expertise lies in
+                        balancing creativity and practicality to design solutions that leave a lasting impact.</p>
                 </div>
             </div>
 
@@ -89,7 +169,12 @@
                 <div class="service-info">
                     <i class="bx bx-code"></i>
                     <h4>Front End Development</h4>
-                    <p>As a front-end developer, I specialize in building interactive and responsive web interfaces that bring designs to life. I create user-friendly web applications that perform seamlessly across devices. I have a strong focus on optimizing performance, maintaining clean and modular code, and ensuring compatibility across browsers. By bridging the gap between design and functionality, I deliver dynamic, visually appealing, and high-performing front-end solutions.</p>
+                    <p>As a front-end developer, I specialize in building interactive and responsive web interfaces that
+                        bring designs to life. I create user-friendly web applications that perform seamlessly across
+                        devices. I have a strong focus on optimizing performance, maintaining clean and modular code,
+                        and ensuring compatibility across browsers. By bridging the gap between design and
+                        functionality, I deliver dynamic, visually appealing, and high-performing front-end solutions.
+                    </p>
                 </div>
             </div>
 
@@ -97,7 +182,10 @@
                 <div class="service-info">
                     <i class="bx bx-code-curly"></i>
                     <h4>Backend Development</h4>
-                    <p>My expertise lies in crafting scalable and secure server-side solutions. In Autheclipse, I developed the back-end using Node.js and Express, managing user authentication and database integration with MySQL. I focus on building robust API structures, optimizing server performance, and ensuring secure data handling to support feature-rich applications.</p>
+                    <p>My expertise lies in crafting scalable and secure server-side solutions. In Autheclipse, I
+                        developed the back-end using Node.js and Express, managing user authentication and database
+                        integration with MySQL. I focus on building robust API structures, optimizing server
+                        performance, and ensuring secure data handling to support feature-rich applications.</p>
                 </div>
             </div>
         </div>
@@ -110,21 +198,29 @@
             <div class="project-card">
                 <img src="images/proj1.png" alt="Project 1">
                 <h3>Pong Frenzy</h3>
-                <p>This project presents a Pong game developed in Java, utilizing double image buffering for smooth rendering. Organized within the MyPong package, it employs object-oriented principles. The game features classic Pong gameplay, with one paddle controlled by the computer and the other by the user, showcasing Java's OOPs capabilities and advanced rendering techniques.</p>
+                <p>This project presents a Pong game developed in Java, utilizing double image buffering for smooth
+                    rendering. Organized within the MyPong package, it employs object-oriented principles. The game
+                    features classic Pong gameplay, with one paddle controlled by the computer and the other by the
+                    user, showcasing Java's OOPs capabilities and advanced rendering techniques.</p>
                 <div class="btn">Review Project</div>
             </div>
 
             <div class="project-card">
                 <img src="images/proj2.png" alt="Project 2">
                 <h3>AuthEclipse</h3>
-                <p>Created a secure authentication system with Node.js, Express, and Passport.js. Implemented user registration and login functionality, with passwords encrypted using bcrypt. Followed best practices for security and scalability. The system provides a solid foundation for user authentication in web applications.</p>
+                <p>Created a secure authentication system with Node.js, Express, and Passport.js. Implemented user
+                    registration and login functionality, with passwords encrypted using bcrypt. Followed best practices
+                    for security and scalability. The system provides a solid foundation for user authentication in web
+                    applications.</p>
                 <div class="btn">Review Project</div>
             </div>
 
             <div class="project-card">
                 <img src="images/proj3.png" alt="Project 3">
                 <h3>OTC Drug Management System</h3>
-                <p> In this project, we discuss the medicine or the drug that has to be given to the patient and it uses the databases to discuss the same. Here we also discuss the expiry of the medicines. Also here we discuss the products like soap, facewash etc.</p>
+                <p> In this project, we discuss the medicine or the drug that has to be given to the patient and it uses
+                    the databases to discuss the same. Here we also discuss the expiry of the medicines. Also here we
+                    discuss the products like soap, facewash etc.</p>
                 <div class="btn">Review Project</div>
             </div>
         </div>
@@ -196,4 +292,5 @@
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
