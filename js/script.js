@@ -29,3 +29,12 @@ window.addEventListener('scroll', () => {
         }
     }, 5000);
 });
+
+//Typing animation in Home Section
+var typed = new Typed('.typing', {
+    strings: ["Front End Developer", "Backend Developer", "Web Designer"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    backDelay: 1000,
+    loop: true
+});
