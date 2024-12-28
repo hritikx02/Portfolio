@@ -613,6 +613,10 @@ section {
         margin: 2rem 0;
     }
 
+    .about-content p {
+        text-align: center;
+    }
+
     .about img {
         width: 52vw;
     }
